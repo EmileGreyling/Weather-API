@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
     //Accessing Geolocation of User
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
-            // Storing Longitue and Latitue
+            // Storing Longitude and Latitude
             long = position.coords.longitude
             lat = position.coords.latitude;
             const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
